@@ -1,0 +1,118 @@
+/* Centraliza o conteúdo na tela */
+.container {
+  padding-top: 80px; /* Essa parte pode ser removida se o padding da .content for ajustado */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #faf9f9; /* Cor de fundo da tela */
+}
+
+/* Estilos da tela de splash */
+.splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.splashImage {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Estilização do contêiner principal */
+.video {
+   /* Remova se não for necessário */
+  width: 100%; /* Mantém 100% da largura do contêiner */
+  height: auto; /* Altera para auto para evitar problemas de proporção */
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* Centraliza o botão no meio da tela */
+.button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Para centralizar em coluna se você quiser adicionar mais elementos depois */
+}
+
+.button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #4CAF50; /* Cor de fundo do botão */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.button:hover {
+  background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+
+.apiResponse {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+  word-wrap: break-word;
+  padding: 20px; /* Adiciona padding para espaçamento */
+  background-color: #faf9f9;
+  position: relative; /* Para garantir que fique abaixo da navbar */
+  max-height: 200px; /* Defina uma altura máxima, ajuste conforme necessário */
+  border-radius: 8px; /* Adiciona bordas arredondadas para melhor visualização */
+  background-color: #faf9f9;
+  overflow: auto;
+} 
+
+
+/* Navbar */
+.navbar {
+  position: fixed; /* Fixa a navbar no topo da tela */
+  top: 0; /* Posiciona no topo */
+  left: 0; /* Alinha à esquerda */
+  width: 100%; /* Ocupar toda a largura */
+  display: flex; /* Adicione display flex para centralizar conteúdo */
+  justify-content: center; /* Centraliza a imagem */
+  padding: 10px 0; /* Padding uniforme para a navbar */
+  z-index: 10; /* Garante que a navbar fique acima de outros conteúdos */
+  background-color: white; /* Cor de fundo para garantir visibilidade */
+  height: 80px; /* Defina uma altura fixa para a navbar */
+}
+
+.navbarImage {
+  max-width: 100%; /* Ajusta a imagem para não exceder a largura da tela */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Conteúdo principal */
+.content {
+   /* Alinha com a altura da navbar */
+  padding-bottom: 20px; /* Adiciona espaçamento na parte inferior */
+}
+
+.videoContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.processingOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 10;
+}
